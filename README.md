@@ -8,7 +8,7 @@ mark read/unread, move message (labels).
 Filename: **demo.mp4**
 
 ## Prerequisites
-- Enable Gmail API in Google Cloud; create OAuth 2.0 Client (Desktop) and place `client_secret.json` in repo root.
+- Enable Gmail API in Google Cloud, create OAuth 2.0 Client (Desktop) and place `client_secret.json` in repo root.
 - Python 3.10+
 
 ## Install
