@@ -1,0 +1,26 @@
+{
+  "predicate": "Any",
+  "rules": [
+    {
+      "field": "from",
+      "predicate": "contains",
+      "value": "Swiggy <noreply@swiggy.in>"
+    },
+    {
+      "field": "subject",
+      "predicate": "contains",
+      "value": "The best o"
+    },  
+    {
+      "field": "received",
+      "predicate": "less_than_days",
+      "value": 1
+    }
+  ],
+  "actions": [
+    "mark_read",
+    {
+      "move": "Processed"
+    }
+  ]
+}

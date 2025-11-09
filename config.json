@@ -1,0 +1,5 @@
+{
+  "database_url": "sqlite:///email.db",
+  "max_fetch": 100,
+  "default_move_label": "Processed"
+}
