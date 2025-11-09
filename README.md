@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```bash
 python auth.py
 ```
-This opens a browser; after consent a `token.json` is saved.
+This opens a browser, after consent a `token.json` is saved.
 
 ## Configure
 `config.json`:
