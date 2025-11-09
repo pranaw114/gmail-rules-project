@@ -41,15 +41,29 @@ python fetch_emails.py
 `rules.json`:
 ```json
 {
-  "predicate": "All",
+  "predicate": "Any",
   "rules": [
-    { "field": "from", "predicate": "contains", "value": "@gmail.com" },
-    { "field": "subject", "predicate": "contains", "value": "swiggy" },
-    { "field": "received", "predicate": "less_than_days", "value": 1 }
+    {
+      "field": "from",
+      "predicate": "contains",
+      "value": "Swiggy <noreply@swiggy.in>"
+    },
+    {
+      "field": "subject",
+      "predicate": "contains",
+      "value": "The best o"
+    },  
+    {
+      "field": "received",
+      "predicate": "less_than_days",
+      "value": 1
+    }
   ],
   "actions": [
     "mark_read",
-    { "move": "Processed" }
+    {
+      "move": "Processed"
+    }
   ]
 }
 ```
